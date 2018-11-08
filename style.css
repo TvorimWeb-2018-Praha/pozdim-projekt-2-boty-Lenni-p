@@ -1,11 +1,4 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
-
-body {
-    text-rendering: optimizeLegibility;
-}
-
 /*
  BARVY
  svetle sede pozadi      #f5f5f5
@@ -21,3 +14,139 @@ body {
 */
 
 /* ----- zde zacni psat vlastni css ----- */
+
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+body{
+    text-rendering: optimizeLegibility;
+    background-color: #f5f5f5;
+}
+
+li{
+    display: inline-block;
+    margin: 8px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.zbozi{
+    position: relative;
+    left: 80px;
+    width: 670px;
+    height: 440px;
+    border-radius: 5%;
+    box-shadow: #959595 3px 3px 20px;
+}
+
+.vizual{
+    float: left;
+    width: 50%;
+    position: relative;
+    font-family: 'Rubik', sans-serif;
+    padding: 30px;
+    height: 440px;
+    border-radius: 5% 0 0 5%;
+    background-image: linear-gradient(#06d7c1, #50cc49);
+}
+
+.detaily{
+    position: relative;
+    background-color: white;
+    font-family: 'Rubik', sans-serif;
+    float: left;
+    width: 50%;
+    border-radius: 0 5% 5% 0;
+    padding: 30px;
+    height: 440px;
+}
+
+.slogan{
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+.cenovka{
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+
+.vybrana{
+    border: 1.3px solid  #f15f42;
+    border-radius: 50%;
+    padding: 5px;
+    color: #f15f42;
+}
+
+.tlacitko{
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    display: block;
+    background-color: #f15f42;
+    color: white;
+    border: 1px solid #f15f42;
+    padding: 6px 30px;
+    border-radius: 7%;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.cena{
+    font-family: 'Rubik', sans-serif;
+    font-size:28px;
+    font-weight: 500;
+    color: white;
+}
+
+.zaruka{
+    font-family: 'Rubik', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+}
+
+.bota{
+    display: block;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.nazev{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    text-transform: uppercase;
+}
+
+.produkt{
+    font-size: 14px;
+    font-weight: 400;
+    color: #959595;
+}
+
+.popis{
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+    padding: 0 0 30px 0;
+    margin: 0;
+    border: solid #06d7c1;
+    border-width: 0 0 1px 0;
+}
+
+.parametr{
+    padding: 30px 0 0 0;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+    text-transform: uppercase;
+}
